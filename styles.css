@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	max-width: 1400px;
+	padding: 1rem;
+}
+.mobile-nav {
+	display: none;
+}
+.classic-nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	height: 10rem;
+}
+.logo-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	gap: 0.25rem;
+	align-items: center;
+}
+.icons_logos {
+	width: 30px;
+	height: auto;
+}
+.classic-ul {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	gap: 0rem 2rem;
+}
+.hide {
+	display: none;
+}
+@media screen and (max-width: 768px) {
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	.classic-nav {
+		display: none;
+	}
+	.mobile-nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 30px;
+	}
+	.mobile-nav .button {
+		margin-left: auto;
+	}
+	.mobile-nav .logo {
+		margin-left: auto;
+		font-size: 1.25rem;
+	}
+
+	.button > .lign {
+		height: 2px;
+		width: 20px;
+		background-color: rgb(44, 40, 40);
+		margin-top: 3px;
+	}
+	.slider {
+		display: block;
+		position: absolute;
+		width: 40%;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		height: 100%;
+		background-color: #222;
+	}
+	.mobile-ul {
+		margin-top: 3rem;
+		margin-left: 1rem;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		height: 100%;
+		gap: 1rem;
+		color: white;
+	}
+	.cross {
+		height: 2px;
+		width: 20px;
+		background-color: rgb(255, 255, 255);
+		margin-top: 3px;
+		position: absolute;
+		top: 1.5rem;
+		right: 1rem;
+	}
+	.cross:first-child {
+		transform: rotate(-45deg);
+	}
+	.cross:last-child {
+		transform: rotate(45deg);
+	}
+	section {
+		width: 100%;
+		height: 60vh;
+		min-height: 600px;
+		background-size: contain;
+		background-image: url("./imgs/qlinex.png"),
+			linear-gradient(180deg, rgb(107, 208, 255) 0%, rgb(0, 0, 0) 100%);
+
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		position: relative;
+	}
+	.title-wrapper {
+		position: absolute;
+		top: 5rem;
+		left: 2rem;
+		padding: 1.5rem;
+		background: rgba(44, 44, 44, 0.125);
+		width: fit-content;
+		border-radius: 1.25rem;
+	}
+	.title {
+		width: 200px;
+		font-size: 2rem;
+		font-family: "Poppins", sans-serif;
+		color: white;
+	}
+	.title-text {
+		width: 200px;
+
+		font-family: "Poppins", sans-serif;
+		color: white;
+	}
+}
