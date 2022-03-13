@@ -5,7 +5,16 @@ const article_article = document.querySelector(".article-article")
 const article_image = document.querySelector(".article-image")
 const logo = document.querySelectorAll(".logo")
 const mobileButton = document.querySelector(".button")
+const btnNav = document.querySelectorAll(".btn-nav")
 
+//handle navigation vision
+
+for (let b of btnNav) {
+	b.addEventListener("click", () => {
+		btnNav.forEach((bu) => bu.classList.remove("active"))
+		b.classList.add("active")
+	})
+}
 //slider mobile nav
 
 mobileButton.addEventListener("click", () => {
