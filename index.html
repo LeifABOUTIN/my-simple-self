@@ -12,11 +12,11 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./styles.css" />
-		<script src="./script.js" defer></script>
+		<script src="./script.js" type="module" defer></script>
 	</head>
 	<body>
 		<nav class="mobile-nav">
-			<span class="logo">LOGO</span>
+			<span class="logo">Me, Curious, Relentless.</span>
 			<div class="button">
 				<p class="lign"></p>
 				<p class="lign"></p>
@@ -29,7 +29,7 @@
 				<p class="cross"></p>
 			</div>
 			<ul class="mobile-ul">
-				<li>Languages</li>
+				<li id="languages">Languages</li>
 				<p class="logo-wrapper hide">
 					<img class="icons_logos" src="./imgs/html.png" />
 					<img class="icons_logos" src="./imgs/css.png" />
@@ -39,8 +39,9 @@
 					<img class="icons_logos" src="./imgs/python.png" />
 					<img class="icons_logos" src="./imgs/golang.png" />
 				</p>
-				<li>Frameworks</li>
-				<p class="logo-wrapper">
+				<li id="frameworks">Frameworks</li>
+				<p class="logo-wrapper hide">
+					<img class="icons_logos" src="./imgs/laravel.png" />
 					<img class="icons_logos" src="./imgs/nodejs.png" />
 					<img class="icons_logos" src="./imgs/reactjs.png" />
 					<img class="icons_logos" src="./imgs/nextjs.png" />
@@ -50,29 +51,128 @@
 					<img class="icons_logos" src="./imgs/django.png" />
 					<img class="icons_logos" src="./imgs/electronjs2.png" />
 				</p>
-				<li>Live Production</li>
-				<li>Skills</li>
+				<li id="live-production">Live Production</li>
+				<p class="logo-wrapper hide">
+					<img class="icons_logos" src="./imgs/vmix.png" />
+					<img class="icons_logos" src="./imgs/blackmagic.png" />
+					<img class="icons_logos" src="./imgs/obs.png" />
+				</p>
+
+				<a class="email-nav" href="mailto:leif.k.boutin@gmail.com"
+					>Email me!</a
+				>
 			</ul>
 		</div>
 		<nav class="classic-nav">
-			<span>LOGO</span>
+			<span class="logo">Me, Curious, Relentless.</span>
 			<ul class="classic-ul">
-				<li>Languages</li>
+				<div class="language-wrapper">
+					<li id="languages">Languages</li>
+					<p class="logo-wrapper-classic hide">
+						<img class="icons_logos" src="./imgs/html.png" />
+						<img class="icons_logos" src="./imgs/css.png" />
+						<img class="icons_logos" src="./imgs/javascript.png" />
+						<img class="icons_logos" src="./imgs/typescript.png" />
+						<img class="icons_logos" src="./imgs/php.png" />
+						<img class="icons_logos" src="./imgs/python.png" />
+						<img class="icons_logos" src="./imgs/golang.png" />
+					</p>
+				</div>
+				<div class="language-wrapper">
+					<li id="frameworks">Frameworks</li>
+					<p class="logo-wrapper-classic hide">
+						<img
+							class="icons_logos logo-framework"
+							src="./imgs/laravel.png"
+						/>
+						<img
+							class="icons_logos logo-framework"
+							src="./imgs/nodejs.png"
+						/>
+						<img
+							class="icons_logos logo-framework"
+							src="./imgs/reactjs.png"
+						/>
+						<img
+							class="icons_logos logo-framework"
+							src="./imgs/nextjs.png"
+						/>
+						<img
+							class="icons_logos logo-framework"
+							src="./imgs/nestjs.png"
+						/>
+						<img
+							class="icons_logos logo-framework"
+							src="./imgs/vuejs.png"
+						/>
+						<img
+							class="icons_logos logo-framework"
+							src="./imgs/react native.png"
+						/>
+						<img
+							class="icons_logos logo-framework"
+							src="./imgs/django.png"
+						/>
+						<img
+							class="icons_logos logo-framework"
+							src="./imgs/electronjs2.png"
+						/>
+					</p>
+				</div>
+				<div class="language-wrapper">
+					<li id="live-production">Live Production</li>
+					<p class="logo-wrapper-classic hide">
+						<img
+							class="icons_logos logo-prod"
+							src="./imgs/blackmagic.png"
+						/>
+						<img class="icons_logos logo-prod" src="./imgs/vmix.png" />
+						<img class="icons_logos logo-prod" src="./imgs/obs.png" />
+					</p>
+				</div>
 
-				<li>Frameworks</li>
-				<li>Live Production</li>
-				<li>Skills</li>
+				<a href="mailto:leif.k.boutin@gmail.com">Email me!</a>
 			</ul>
 		</nav>
 		<section>
 			<div class="title-wrapper">
-				<p class="title">Hi, i'm Leif</p>
+				<p class="title">Hi, I'm Leif</p>
 				<p class="title-text">
-					web developer, live director & sports enthusiast.
+					web developer, live director & sports enthusiast
 				</p>
 			</div>
-
-			<article></article>
 		</section>
+		<article>
+			<h1 class="article-title"></h1>
+			<div class="article-image"></div>
+			<!-- <div class="container-text"> -->
+			<p class="article-article"></p>
+			<!-- </div> -->
+		</article>
+		<footer>
+			<p class="reach-me">Contact me</p>
+			<div class="contact">
+				<a
+					href="https://www.linkedin.com/in/leif-boutin-34a275109/"
+					target="_blank"
+					><img
+						class="contact-logo"
+						src="./imgs/linkedin.png"
+						alt="linkedin"
+				/></a>
+				<a href="https://twitter.com/BoutinLeif" target="_blank"
+					><img
+						class="contact-logo"
+						src="./imgs/twitter.png"
+						alt="linkedin"
+				/></a>
+				<a href="https://github.com/LeifABOUTIN" target="_blank"
+					><img
+						class="contact-logo"
+						src="./imgs/github.png"
+						alt="linkedin"
+				/></a>
+			</div>
+		</footer>
 	</body>
 </html>
