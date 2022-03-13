@@ -281,9 +281,9 @@ footer {
 }
 @media screen and (max-width: 768px) {
 	body {
+		width: 100vw;
 		margin: 0;
 		padding: 0;
-		overflow: hidden;
 	}
 	.classic-nav {
 		display: none;
@@ -339,7 +339,7 @@ footer {
 		margin-top: 3px;
 	}
 	.slider {
-		display: block;
+		display: none;
 		position: absolute;
 		width: 60%;
 		z-index: 10;
@@ -348,7 +348,7 @@ footer {
 		height: 100%;
 		background-color: #222;
 		padding-left: 1rem;
-		transition: right 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
 		border-left: #a0b572 4px solid;
 	}
 	.mobile-ul {
@@ -420,8 +420,22 @@ footer {
 	.button {
 		cursor: pointer;
 	}
+	li {
+		border: none;
+	}
 	.show {
-		right: 0;
+		right: -100%;
+
+		animation: slidefromright 0.5s ease-in-out forwards;
+		display: block;
+	}
+	@keyframes slidefromright {
+		0% {
+			right: -100%;
+		}
+		100% {
+			right: 0;
+		}
 	}
 	.logo-wrapper {
 		display: grid;
