@@ -6,6 +6,18 @@ const article_image = document.querySelector(".article-image")
 const logo = document.querySelectorAll(".logo")
 const mobileButton = document.querySelector(".button")
 const btnNav = document.querySelectorAll(".btn-nav")
+const slider = document.querySelector(".slider")
+
+document.addEventListener("click", (e) => {
+	console.log(e.target)
+	console.log(document.querySelector(".lign"))
+	if (document.querySelector(".button").contains(e.target)) {
+		return
+	}
+	if (slider.classList.contains("show") && !slider.contains(e.target)) {
+		slider.classList.remove("show")
+	}
+})
 
 //handle navigation vision
 
@@ -18,7 +30,6 @@ for (let b of btnNav) {
 //slider mobile nav
 
 mobileButton.addEventListener("click", () => {
-	console.log("click")
 	let slider = document.querySelector(".slider")
 	slider.classList.add("show")
 	const cross = document.querySelectorAll(".cross")
@@ -28,7 +39,7 @@ mobileButton.addEventListener("click", () => {
 		})
 	)
 })
-console.log(logo)
+
 logo.forEach((l) => {
 	l.addEventListener("click", () => {
 		handleME()
@@ -92,7 +103,6 @@ lis2.forEach((li) => {
 	})
 
 	li.addEventListener("mouseout", () => {
-		console.log(li.nextElementSibling)
 		li.nextElementSibling.classList.toggle(
 			"hide",
 			!li.nextElementSibling.classList.contains("hide")
